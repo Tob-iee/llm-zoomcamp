@@ -1,0 +1,5 @@
+# Use the ollama image as the base image
+FROM ollama/ollama:latest
+
+# Copy the model file from the local directory to the working directory in the container
+COPY ollama_files /root/.ollama/

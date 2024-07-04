@@ -15,8 +15,6 @@ client = OpenAI(
 
 es_client = Elasticsearch('http://localhost:9200')
 
-# for doc in tqdm(documents):
-#     es_client.index(index=index_name, document=doc)
 
 def elastic_search(query, index_name = "course-quesions"):
     search_query = {
